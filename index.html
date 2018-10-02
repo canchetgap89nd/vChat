@@ -21,7 +21,38 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
     <title>Document</title>
-    
+    <script>
+        $(document).ready(function(){
+            var $nav = $('.header'),
+            $win = $(window),
+            winH = $win.height();    // Get the window height.
+            jQuery(function($) {
+
+                if($(window).scrollTop()>=winH){
+                    $nav.addClass("classScroll");
+                }
+            
+                
+                else    
+                $nav.removeClass("classScroll");
+
+                $win.on("scroll", function () {
+                    if($(window).scrollTop()>=winH){
+                        $nav.addClass("classScroll");
+                    }
+                    
+                    else{
+                        $nav.removeClass("classScroll");
+                    }
+                }).on("resize", function(){ // If the user resizes the window
+                winH = $(this).height(); // you'll need the new height value
+                });
+            });
+
+
+        });
+
+    </script>
 </head>
 <body>
     <div class="wrap-page1">
@@ -147,32 +178,32 @@
     <footer>
         <div class="container">
             <div class="row menu-footer">
-                <div class="col-2">
+                <div class="col-md-4 col-xl-2 col-lg-4">
                     <a href="#">
                         <img src="img/Forma-1-copy-2.png"><span>Web Browser</span>
                     </a>
                 </div>
-                <div class="col-2">
+                <div class="col-md-4 col-xl-2 col-lg-4">
                     <a href="#">
                         <img src="img/Forma-1-copy-21.png"><span>Windows</span>
                     </a>
                 </div>
-                <div class="col-2">
+                <div class="col-md-4 col-xl-2 col-lg-4">
                     <a href="#">
                         <img src="img/Forma-1-copy-22.png"><span>Mac OSX</span>
                     </a>
                 </div>
-                <div class="col-2">
+                <div class="col-md-4 col-xl-2 col-lg-4">
                     <a href="#">
                         <img src="img/Forma-1-copy-23.png"><span>iPad</span>
                     </a>
                 </div>
-                <div class="col-2">
+                <div class="col-md-4 col-xl-2 col-lg-4">
                     <a href="#">
                         <img src="img/Forma-1-copy-24.png"><span>Android</span>
                     </a>
                 </div>
-                <div class="col-2">
+                <div class="col-md-4 col-xl-2 col-lg-4">
                     <a href="#">
                         <img src="img/Forma-1-copy-25.png"><span>iPhone</span>
                     </a>
@@ -180,7 +211,7 @@
 
             </div>
             <div class="row row1-footer">
-                <div class="col-6">
+                <div class="col-xl-6 col-md-12">
                     <div class="row">
                         <div class="col-6">
                             <p class="title-footer">Sản phẩm</p>
@@ -203,64 +234,66 @@
                             <p class="title-footer">Tính năng</p>
                             <ul class="box-item-footer">
                                 <li>
-                                    <a href="#">Tính năng</a>
+                                    <a href="#">Tương tác chat</a>
                                 </li>
                                 <li>
-                                    <a href="#">Tính năng</a>
+                                    <a href="#">Cài đặt cửa sổ chat</a>
                                 </li>
                                 <li>
-                                    <a href="#">Tính năng</a>
+                                    <a href="#">Quản lí khách hàng</a>
                                 </li>
                                 <li>
-                                    <a href="#">Tính năng</a>
+                                    <a href="#">Báo cáo, thông kê</a>
                                 </li>
                                 <li>
-                                    <a href="#">Tính năng</a>
+                                    <a href="#">Quản lí nhóm</a>
                                 </li>
                                 <li>
-                                    <a href="#">Tính năng</a>
+                                    <a href="#">Ứng dụng</a>
                                 </li>
                             </ul>
                         </div>
                     </div>
                 </div>
-                <div class="col-6">
+                <div class="col-xl-6 col-md-12">
                     <p class="title-footer">Liên hệ với chúng tôi</p>
                     <ul class="box-lien-he">
                         <li>
-                            <img src="img/Forma-1-copy-26.png">
-                            <span>(024)73 050 105 - 0169 2250 821</span>
+                            <div><img src="img/Forma-1-copy-26.png"></div>
+                            <div><span>(024)73 050 105 - 0169 2250 821</span></div>
                         </li>
                         <li>
-                            <img src="img/Forma-1-copy-27.png">
-                            <span>(024)73 050 105 - 0169 2250 821</span>
+                            <div><img src="img/Forma-1-copy-27.png"></div>
+                            <div><span>Trụ sở: Số 102, phố Thái Thịnh, phường<br>
+                                    Trung Liệt, quận Đống Đa, Hà Nội</span></div>
                         </li>
                         <li>
-                            <img src="img/Forma-1-copy-27.png">
-                            <span>(024)73 050 105 - 0169 2250 821</span>
+                            <div><img src="img/Forma-1-copy-27.png"></div>
+                            <div><span>Chi nhánh: Đường Lữ Gia, Phường 15, Quận<br>
+                                    11, Hồ Chí Minh</span></div>
                         </li>
                         <li>
-                            <img src="img/Shape-1-copy-4.png">
-                            <span>(024)73 050 105 - 0169 2250 821</span>
+                           <div> <img src="img/Shape-1-copy-4.png"></div>
+                            <div><span>Group Facebook hỗ trợ khách hàng </span></div>&nbsp;&nbsp;&nbsp;<a style="color:red;" href="#">tại đây</a>
                         </li>
                     </ul>
                 </div>
 
             </div>
             <div class="row row2-footer">
-                    <div class="col-6">
+                    <div class="col-xl-6 col-md-12">
                             <div class="row">
                                 <div class="col-6">
                                     <p class="title-footer">Tài liệu</p>
                                     <ul class="box-item-footer">
                                         <li>
-                                            <a href="#">Tính năng</a>
+                                            <a href="#">Hướng dẫn</a>
                                         </li>
                                         <li>
-                                            <a href="#">Tính năng</a>
+                                            <a href="#">Blog</a>
                                         </li>
                                         <li>
-                                            <a href="#">Tính năng</a>
+                                            <a href="#">API</a>
                                         </li>
                                         
                                     </ul>
@@ -269,13 +302,13 @@
                                     <p class="title-footer">Thông tin khác</p>
                                     <ul class="box-item-footer">
                                         <li>
-                                            <a href="#">Tính năng</a>
+                                            <a href="#">Điều khoản sử dụng</a>
                                         </li>
                                         <li>
-                                            <a href="#">Tính năng</a>
+                                            <a href="#">Chính sách bảo mật</a>
                                         </li>
                                         <li>
-                                            <a href="#">Tính năng</a>
+                                            <a href="#">Tuyển dụng</a>
                                         </li>
                                      
                                      
@@ -283,12 +316,14 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-6">
-                            <a href="#"><img src="img/Forma-1-copy-28.png"></a>
-                            <a href="#"><img src="img/Forma-1-copy-28.png"></a>
-                            <a href="#"><img src="img/Forma-1-copy-28.png"></a>
-                            <a href="#"><img src="img/Forma-1-copy-28.png"></a>
-                            <a href="#"><img src="img/Forma-1-copy-28.png"></a>
+                        <div class="col-xl-6 col-md-12 social">
+                            <div class="box-social">
+                                <a style="margin-left: 0;" href="#"><img src="img/Forma-1-copy-28.png"></a>
+                                <a href="#"><img src="img/yt.png"></a>
+                                <a href="#"><img src="img/inst.png"></a>
+                                <a href="#"><img src="img/tw.png"></a>
+                                <a href="#"><img src="img/gg.png"></a>
+                            </div>
 
                         </div>
         
