@@ -582,3 +582,8 @@ footer{
         transform: translateY(0);
         }
         } 
+@media (max-width: 768px){
+.menu-footer .col-6{
+    padding: 0 10px;
+}
+}
