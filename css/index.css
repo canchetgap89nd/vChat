@@ -587,3 +587,7 @@ footer{
     padding: 0 10px;
 }
 }
+.box-lien-he>li>div+div>span{
+    font-family: RobotoRegular;
+    font-size: 15px;    
+}
