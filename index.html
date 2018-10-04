@@ -20,6 +20,8 @@
     <script src="js/action.js"> //js action
     
     </script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 </head>
 <body>
     <div class="wrap-page1">
@@ -59,7 +61,7 @@
                         
 
                         <a href="javascript:void(0);" class="icon">
-                          <i class="fa fa-bars"></i></a>
+                           <img src="img/icon-menu.png"></a>
                         <div class="box-item-mm">
                             <div>
                                 <a class="item-menu-mobile" href="#">Sản phẩm</a>
@@ -72,6 +74,7 @@
                                 <a class="btn-menu-mobile" href="#">Đăng nhập</a>
                             </div>
                         </div>
+                        <div class="box-close"></div>
                         </a>
                     </div>
                 </div>
@@ -90,10 +93,10 @@
     <div class="wrap-page2">
         <div class="container">
             <div class="row">
-                <div class="col-xl-5 col-sm-12">
+                <div class="col-xl-5 col-sm-12" data-aos="fade-right" data-aos-duration="2000">
                     <img src="img/Ellipse-3-copy.png">
                 </div>
-                <div class="col-xl-7 col-sm-12 box-txt-page2">
+                <div class="col-xl-7 col-sm-12 box-txt-page2" data-aos="fade-left" data-aos-duration="2000">
                     <div>
                         <p>Trang quản trị trên trình duyệt Web</p>
                         <p>Trang quản trị trên Webtsite vchat.vn với đầy đủ <br>
@@ -109,7 +112,7 @@
             <div class="container">
                 <div class="row">
                     
-                    <div class="col-xl-5 col-sm-12 box-txt-page3">
+                    <div class="col-xl-5 col-sm-12 box-txt-page3" data-aos="fade-right" data-aos-duration="2000">
                         <div>
                             <p>Ứng dụng cho máy tính</p>
                             <p>Quên đi sự lộn xộn của các Website và tập trung vào cuộc trò chuyện với khách hàng của bạn. Giao diện đơn giản và sắp xếp hợp lý giúp cho việc chăm sóc khách hàng dễ dàng.</p>
@@ -118,7 +121,7 @@
 
                         </div>
                     </div>
-                    <div class="col-xl-7 col-sm-12">
+                    <div class="col-xl-7 col-sm-12" data-aos="fade-left" data-aos-duration="2000">
                         <img src="img/Ellipse-3-copy-2.png">
                     </div>
                 </div>
@@ -127,10 +130,10 @@
     <div class="wrap-page4">
             <div class="container">
                 <div class="row">
-                    <div style="text-align: center;" class="col-xl-5 col-sm-12">
+                    <div style="text-align: center;" class="col-xl-5 col-sm-12 aos-item" data-aos="fade-right" data-aos-duration="2000">
                         <img src="img/iphone.png">
                     </div>
-                    <div class="col-xl-7 col-sm-12 box-txt-page4">
+                    <div class="col-xl-7 col-sm-12 box-txt-page4 aos-item" data-aos="fade-left" data-aos-duration="2000">
                         <div>
                             <p>Ứng dụng cho điện thoại</p>
                             <p>Trao đổi với khách hàng ngay cả khi bạn đang không có mặt<br>
@@ -148,7 +151,7 @@
             <div class="container">
                 <div class="row">
                     
-                    <div class="col-xl-6 col-sm-12 box-txt-page2">
+                    <div class="col-xl-6 col-sm-12 box-txt-page2" data-aos="fade-right" data-aos-duration="2000">
                         <div>
                             <p class="txt-page5">Trải nghiệm vChat miễn phí ngay hôm nay!</p>
                             <p class="txt-page5">5 phút cài đặt, 30 ngày dùng thử và hàng chục tính năng hữu ích</p>
@@ -156,7 +159,7 @@
 
                         </div>
                     </div>
-                    <div style="text-align: center;" class="col-xl-6 col-sm-12">
+                    <div style="text-align: center;" class="col-xl-6 col-sm-12" data-aos="fade-left" data-aos-duration="2000">
                         <img id="img-page5" src="img/Layer-26-copy.png">
                     </div>
                 </div>
@@ -165,40 +168,193 @@
     <footer>
         <div class="container">
             <div class="row menu-footer">
-                <div class="col-md-4 col-xl-2 col-lg-4 col-6">
+                <div class="col-12 title-footer-mobile">
+                    <p>trải nghiệm sản phẩm ngay</p>
+                </div>
+                <div class="col-6 gg-play">
+                    <a href="#"><img src="img/Layer-19-copy-4.png"></a>
+                </div>
+                <div class="col-6 app-store">
+
+                    <a href="#"><img src="img/Layer-20-copy-4.png"></a>
+                </div>
+                <div class="col-md-4 col-xl-2 col-lg-4 col-6 web">
                     <a href="#">
                         <img src="img/Forma-1-copy-2.png"><span>Web Browser</span>
                     </a>
                 </div>
-                <div class="col-md-4 col-xl-2 col-lg-4 col-6">
+                <div class="col-md-4 col-xl-2 col-lg-4 col-6 win">
                     <a href="#">
                         <img src="img/Forma-1-copy-21.png"><span>Windows</span>
                     </a>
                 </div>
-                <div class="col-md-4 col-xl-2 col-lg-4 col-6">
+                <div class="col-md-4 col-xl-2 col-lg-4 col-6 mac">
                     <a href="#">
                         <img src="img/Forma-1-copy-22.png"><span>Mac OSX</span>
                     </a>
                 </div>
-                <div class="col-md-4 col-xl-2 col-lg-4 col-6">
+                <div class="col-md-4 col-xl-2 col-lg-4 col-6 ipad">
                     <a href="#">
                         <img src="img/Forma-1-copy-23.png"><span>iPad</span>
                     </a>
                 </div>
-                <div class="col-md-4 col-xl-2 col-lg-4 col-6">
+                <div class="col-md-4 col-xl-2 col-lg-4 col-6 android">
                     <a href="#">
                         <img src="img/Forma-1-copy-24.png"><span>Android</span>
                     </a>
                 </div>
-                <div class="col-md-4 col-xl-2 col-lg-4 col-6">
+                <div class="col-md-4 col-xl-2 col-lg-4 col-6 iphone">
                     <a href="#">
                         <img src="img/Forma-1-copy-25.png"><span>iPhone</span>
                     </a>
                 </div>
 
             </div>
+            <div class="row menu-footer-mobile">
+                <div class="col-12">
+                        <button class="accordion" style=""><span><b>Sản phẩm</b></span></button>
+
+                        <div class="panel2">
+                            <a href = "#">
+                                <div class = "box-op">
+                                    <span class = "txt-project">Tính năng</span>
+                
+                                </div>
+                            </a>
+                            <a href = "#">
+                                    <div class = "box-op">
+                                        <span class = "txt-project">Khách hàng</span>
+                    
+                                    </div>
+                                </a>
+                                <a href = "#">
+                                        <div class = "box-op">
+                                            <span class = "txt-project">Tài liệu</span>
+                        
+                                        </div>
+                                </a>
+                                <a href = "#">
+                                        <div class = "box-op">
+                                            <span class = "txt-project">Ứng dụng</span>
+                        
+                                        </div>
+                                </a>
+                        </div>
+                        <!-- Accordion -->
+                        
+                </div>
+                <div class="col-12">
+                    <button class="accordion" style=""><span><b>Tính năng</b></span></button>
+
+                        <div class="panel2">
+                            <a href = "#">
+                                <div class = "box-op">
+                                    <span class = "txt-project">Tương tác chat</span>
+                
+                                </div>
+                            </a>
+                            <a href = "#">
+                                    <div class = "box-op">
+                                        <span class = "txt-project">Cài đặt cửa sổ chat</span>
+                    
+                                    </div>
+                                </a>
+                                <a href = "#">
+                                        <div class = "box-op">
+                                            <span class = "txt-project">Quản lí khách hàng</span>
+                        
+                                        </div>
+                                    </a>
+                                    <a href = "#">
+                                            <div class = "box-op">
+                                                <span class = "txt-project">Báo cáo, thông kê</span>
+                            
+                                            </div>
+                                        </a>
+                                        <a href = "#">
+                                                <div class = "box-op">
+                                                    <span class = "txt-project">Quản lí nhóm</span>
+                                
+                                                </div>
+                                            </a>
+                                            <a href = "#">
+                                                    <div class = "box-op">
+                                                        <span class = "txt-project">Ứng dụng</span>
+                                    
+                                                    </div>
+                                                </a>
+                        </div>
+                        <!-- Accordion -->
+                </div>
+                <div class="col-12">
+                    <button class="accordion" style=""><span><b>Tài liệu</b></span></button>
+
+                        <div class="panel2">
+                            <a href = "#">
+                                <div class = "box-op">
+                                    <span class = "txt-project">Hướng dẫn</span>
+                
+                                </div>
+                            </a>
+                            <a href = "#">
+                                    <div class = "box-op">
+                                        <span class = "txt-project">Blog</span>
+                    
+                                    </div>
+                                </a>
+                                <a href = "#">
+                                        <div class = "box-op">
+                                            <span class = "txt-project">API</span>
+                        
+                                        </div>
+                                    </a>
+                        </div>
+                        <!-- Accordion -->
+                </div>
+                <div class="col-12">
+                    <button class="accordion" style=""><span><b>Thông tin khác</b></span></button>
+
+                        <div class="panel2">
+                            <a href = "#">
+                                <div class = "box-op">
+                                    <span class = "txt-project">Điều khoản sử dụng</span>
+                
+                                </div>
+                            </a>
+                            <a href = "#">
+                                    <div class = "box-op">
+                                        <span class = "txt-project">Chính sách bảo mật</span>
+                    
+                                    </div>
+                                </a>
+                                <a href = "#">
+                                        <div class = "box-op">
+                                            <span class = "txt-project">Tuyển dụng</span>
+                        
+                                        </div>
+                                    </a>
+                        </div>
+                        <!-- Accordion -->
+                </div>
+                <script>
+                        var acc = document.getElementsByClassName("accordion");
+                        var i;
+                
+                        for (i = 0; i < acc.length; i++) {
+                          acc[i].addEventListener("click", function() {
+                            this.classList.toggle("active2");
+                            var panel2 = this.nextElementSibling;
+                            if (panel2.style.maxHeight){
+                              panel2.style.maxHeight = null;
+                            } else {
+                              panel2.style.maxHeight = panel2.scrollHeight + "px";
+                            } 
+                          });
+                        }
+                </script>
+            </div>
             <div class="row row1-footer">
-                <div class="col-xl-7 col-md-12">
+                <div class="col-xl-7 col-md-12 hidden-mobile">
                     <div class="row">
                         <div class="col-6">
                             <p class="title-footer">Sản phẩm</p>
@@ -268,7 +424,7 @@
 
             </div>
             <div class="row row2-footer">
-                    <div class="col-xl-7 col-md-12">
+                    <div class="col-xl-7 col-md-12 hidden-mobile">
                             <div class="row">
                                 <div class="col-6">
                                     <p class="title-footer">Tài liệu</p>
@@ -318,5 +474,14 @@
 
         </div>
     </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+    AOS.init({
+  
+  anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+});
+  </script>
 </body>
 </html>
